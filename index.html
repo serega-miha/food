@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="privet"><h1>Hello world!!!!!!</h1></div>
+    
     <div class="top-button">
         <div class="btn-top"></div>
     </div>
@@ -117,10 +117,11 @@
                     </div>
                 </div>
                 <div class="offer__slider-wrapper">
-                    <div class="offer__slide">
+                   <div class="offer__slider-inner">
+                    <div class="offer__slide ">
                         <img src="img/slider/pepper.jpg" alt="pepper">
                     </div>
-                    <!-- <div class="offer__slide">
+                    <div class="offer__slide">
                         <img src="img/slider/food-12.jpg" alt="food">
                     </div>
                     <div class="offer__slide">
@@ -128,7 +129,8 @@
                     </div>
                     <div class="offer__slide">
                         <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> -->
+                    </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -145,27 +147,27 @@
                     Ваш пол
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div class="calculating__choose-item">Мужчина</div>
+                    <div id="female"  class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div id="male"  class="calculating__choose-item">Мужчина</div>
                 </div>
 
                 <div class="calculating__subtitle">
                     Ваша конституция
                 </div>
                 <div class="calculating__choose calculating__choose_medium">
-                    <input type="text" id="height" placeholder="Введите рост" class="calculating__choose-item">
-                    <input type="text" id="weight" placeholder="Введите вес"  class="calculating__choose-item">
-                    <input type="text" id="age" placeholder="Введите возраст" class="calculating__choose-item">
+                    <input type="text"  id="height" placeholder="Введите рост" class="calculating__choose-item">
+                    <input type="text"  id="weight" placeholder="Введите вес"  class="calculating__choose-item">
+                    <input type="text"  id="age" placeholder="Введите возраст" class="calculating__choose-item">
                 </div>
 
                 <div class="calculating__subtitle">
                     Выберите вашу физическая активность
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div id="low" class="calculating__choose-item">Низкая активность </div>
-                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
-                    <div id="medium" class="calculating__choose-item">Умеренная активность</div>
-                    <div id="high" class="calculating__choose-item">Высокая активность</div>
+                    <div data-ratio = "1.2" id="low" class="calculating__choose-item">Низкая активность </div>
+                    <div data-ratio = "1.375" id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
+                    <div data-ratio = "1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
+                    <div data-ratio = "1.725" id="high" class="calculating__choose-item">Высокая активность</div>
                 </div>
 
                 <div class="calculating__divider"></div>
@@ -175,7 +177,7 @@
                         Ваша суточная норма калорий:
                     </div>
                     <div class="calculating__result">
-                        <span>2700</span> ккал
+                        <span id="totalKal">2700</span> ккал
                     </div>
                 </div>
             </div>
@@ -189,36 +191,48 @@
 
         <div class="menu__field">
             <div class="container">
-                <div class="menu__item">
-                    <img src="img/tabs/vegy.jpg" alt="vegy">
-                    <h3 class="menu__item-subtitle">Меню "Фитнес"</h3>
+                <!-- <div class="menu__item">
+                    <div class="menu__item-img">
+                        <img src="img/tabs/vegy.jpg" alt="vegy">
+                    </div>
+                    <div class="menu__item-body">
+                        <h3 class="menu__item-subtitle">Меню "Фитнес"</h3>
                     <div class="menu__item-descr">Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!</div>
                     <div class="menu__item-divider"></div>
                     <div class="menu__item-price">
                         <div class="menu__item-cost">Цена:</div>
                         <div class="menu__item-total"><span>229</span> грн/день</div>
                     </div>
+                    </div>
                 </div>
                 <div class="menu__item">
-                    <img src="img/tabs/elite.jpg" alt="elite">
-                    <h3 class="menu__item-subtitle">Меню “Премиум”</h3>
+                    <div class="menu__item-img">
+                        <img src="img/tabs/elite.jpg" alt="elite">
+                    </div>
+                    <div class="menu__item-body">
+                        <h3 class="menu__item-subtitle">Меню “Премиум”</h3>
                     <div class="menu__item-descr">В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!</div>
                     <div class="menu__item-divider"></div>
                     <div class="menu__item-price">
                         <div class="menu__item-cost">Цена:</div>
                         <div class="menu__item-total"><span>550</span> грн/день</div>
                     </div>
+                    </div>
                 </div>
                 <div class="menu__item">
-                    <img src="img/tabs/post.jpg" alt="post">
-                    <h3 class="menu__item-subtitle">Меню "Постное"</h3>
+                    <div class="menu__item-img">
+                        <img src="img/tabs/post.jpg" alt="post">
+                    </div>
+                    <div class="menu__item-body">
+                        <h3 class="menu__item-subtitle">Меню "Постное"</h3>
                     <div class="menu__item-descr">Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков. </div>
                     <div class="menu__item-divider"></div>
                     <div class="menu__item-price">
                         <div class="menu__item-cost">Цена:</div>
                         <div class="menu__item-total"><span>430</span> грн/день</div>
                     </div>
-                </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -273,6 +287,24 @@
         </div>
     </div>
 
+    <!-- //========================================== -->
+    <div class="block-form">
+        <div class="newcontainer">
+            <form action="#" class="form">
+              <label class="label" for="phone"
+                >Оставьте свой номер телефона и мы вам перезвоним</label
+              >
+              <div class="input-wrap">
+                <input type="tel" name="phone" id="phone" class="phone" placeholder="+7(___)___-__-__"
+                />
+                <input class="btn" type="submit" value="Отправить" />
+              </div>
+            </form>
+          </div>
+    </div>
+
+
+        <!-- //========================================== -->
     <footer class="footer">
         <div class="container">
             <div class="social">
@@ -307,6 +339,8 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/bundle.js"></script>
 </body>
 </html>
